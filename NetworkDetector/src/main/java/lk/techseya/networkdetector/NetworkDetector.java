@@ -32,6 +32,27 @@ public class NetworkDetector {
         }
 
     }
+    public static void ProgressDetector(Context context,Activity activity,String title,String message){
+        ConnectivityManager manager=(ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo anetwork=manager.getActiveNetworkInfo();
+        ProgressDialog progress = new ProgressDialog(activity);
+        if (null==anetwork){
+            progress.setTitle(title);
+            progress.setMessage(message);
+            Sprite doubleBounce = new WanderingCubes();
+            progress.setIndeterminateDrawable(doubleBounce);
+            progress.setCancelable(false);
+            progress.show();
+            if (manager.isActiveNetworkMetered()){
+                progress.dismiss();
+            }
+        }
+    }
+
+    @Override
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+    }
 
 
 
