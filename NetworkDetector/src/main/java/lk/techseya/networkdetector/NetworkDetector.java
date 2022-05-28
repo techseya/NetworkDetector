@@ -19,9 +19,6 @@ import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 
-import com.github.ybq.android.spinkit.sprite.Sprite;
-import com.github.ybq.android.spinkit.style.WanderingCubes;
-import com.github.ybq.android.spinkit.style.Wave;
 
 
 public class NetworkDetector extends Activity {
@@ -34,9 +31,6 @@ public class NetworkDetector extends Activity {
             dialog.setContentView(R.layout.bg2);
             dialog.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
             dialog.getWindow().setBackgroundDrawableResource(R.drawable.background);
-            ProgressBar progressBar = dialog.findViewById(R.id.spin_kit);
-            Sprite doubleBounce = new Wave();
-            progressBar.setIndeterminateDrawable(doubleBounce);
             dialog.setCancelable(false);
             TextView ttitle=dialog.findViewById(R.id.title);
             TextView tmsg=dialog.findViewById(R.id.message);
@@ -73,8 +67,6 @@ public class NetworkDetector extends Activity {
         if (null==anetwork){
             progress.setTitle(title);
             progress.setMessage(message);
-            Sprite doubleBounce = new WanderingCubes();
-            progress.setIndeterminateDrawable(doubleBounce);
             progress.setCancelable(false);
             progress.show();
             if (manager.isActiveNetworkMetered()){
