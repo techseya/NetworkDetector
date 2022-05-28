@@ -37,6 +37,9 @@ public class NetworkDetector extends Activity {
             dialog.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
             dialog.getWindow().setBackgroundDrawableResource(R.drawable.background);
             dialog.setCancelable(false);
+            ProgressBar progressBar = dialog.findViewById(R.id.spin_kit);
+            Sprite doubleBounce = new Wave();
+            progressBar.setIndeterminateDrawable(doubleBounce);
             TextView ttitle=dialog.findViewById(R.id.title);
             TextView tmsg=dialog.findViewById(R.id.message);
             Button ok=dialog.findViewById(R.id.btn_okay);
