@@ -28,4 +28,4 @@ allprojects {
  
   <img src="app/src/main/res/drawable/Screenshot_2022_0528_171910.gif" width="400" >
   <img src="app/src/main/res/drawable/Screenshot_2022_0527_123606.gif" width="400" >
-  #Intellectual property of ©Techseya 2022
+  # Intellectual property of ©Techseya 2022
