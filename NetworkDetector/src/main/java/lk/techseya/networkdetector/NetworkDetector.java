@@ -19,6 +19,11 @@ import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 
+import com.github.ybq.android.spinkit.sprite.Sprite;
+import com.github.ybq.android.spinkit.style.WanderingCubes;
+import com.github.ybq.android.spinkit.style.Wave;
+
+
 
 
 public class NetworkDetector extends Activity {
@@ -68,6 +73,8 @@ public class NetworkDetector extends Activity {
             progress.setTitle(title);
             progress.setMessage(message);
             progress.setCancelable(false);
+            Sprite doubleBounce = new WanderingCubes();
+            progress.setIndeterminateDrawable(doubleBounce);
             progress.show();
             
         }
