@@ -69,9 +69,7 @@ public class NetworkDetector extends Activity {
             progress.setMessage(message);
             progress.setCancelable(false);
             progress.show();
-            if (manager.isActiveNetworkMetered()){
-                progress.dismiss();
-            }
+            
         }
     }
 
