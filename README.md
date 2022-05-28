@@ -12,7 +12,7 @@ allprojects {
   >Step 2. Add the dependency
   ```gradle
   dependencies {
-	        implementation 'com.github.techseya:NetworkDetector:Tag'
+	        implementation 'com.github.techseya:NetworkDetector:v1.0.0'
 	}
   ```
   ### Usage 
