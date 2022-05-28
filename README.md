@@ -27,7 +27,7 @@ allprojects {
   ```
  
   <img src="app/src/main/res/drawable/image2.gif" width="400" >
-  <img src="app/src/main/res/drawable/Simage.gif" width="400" >
+  <img src="app/src/main/res/drawable/image.gif" width="400" >
   
   
   
