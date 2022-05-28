@@ -16,7 +16,7 @@ import android.widget.Toast;
 import com.google.android.material.theme.overlay.MaterialThemeOverlay;
 
 public class NetworkDetector {
-    @SuppressLint("RestrictedApi")
+        @SuppressLint({"RestrictedApi", "UseCompatLoadingForDrawables"})
     public static void Detector(Context context, Activity activity, String title, String message){
         ConnectivityManager manager=(ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo anetwork=manager.getActiveNetworkInfo();
