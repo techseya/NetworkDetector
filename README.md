@@ -27,4 +27,4 @@ allprojects {
   ```
  
   <img src="app/src/main/res/drawable/Screenshot_20220528_165248.jpg" width="400" >
-  <img src="app/src/main/res/drawable/IMG_20220527_123804.jpg" width="400" >
+  <img src="app/src/main/res/drawable/Screenshot_2022_0527_123606.gif" width="400" >
