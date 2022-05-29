@@ -1,5 +1,7 @@
 # NetworkDetector
 **_Detect active network connection when launching your app_**
+
+ ### Setup
 >Step 1. Add the JitPack repository to your build file
 ```gradle
 allprojects {
