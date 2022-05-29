@@ -25,10 +25,11 @@ allprojects {
   ```java
   NetworkDetector.ProgressDetector(this,MainActivity.this,"Searching for network","Network connection not found...");
   ```
+  # Preview
  
   <img src="app/src/main/res/drawable/image2.gif" width="400" >
   <img src="app/src/main/res/drawable/image.gif" width="400" >
   
-  
+   
   
   _Intellectual property of ©Techseya 2022_
